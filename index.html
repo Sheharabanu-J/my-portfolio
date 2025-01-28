@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Shehara's Portfolio - Full-Stack Development, UI/UX Designer & Software Engineer">
+  <meta name="keywords" content="Full-Stack Development, UI/UX Design, Software Engineering, Web Development, Portfolio, Designer, Developer">
+  <meta name="author" content="Shehara Banu">
+  <meta property="og:title" content="Shehara's Portfolio - Full-Stack Developer & UI/UX Designer">
+  <meta property="og:description" content="Showcasing Full-Stack Development, UI/UX Design, and Software Engineering Projects by Shehera Banu">
+  <meta property="og:image" content="URL-to-image.jpg">
+  <meta property="og:url" content="https://www.yoursite.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Title of the webpage -->
+  <title>Shehara's Portfolio</title>
+
+  <!-- Favicon (Optional but recommended for branding) -->
+  <link rel="icon" href="https://img.icons8.com/?size=100&id=J3nZHWgT1e7m&format=png&color=000000" type="image/x-icon">
+
+  <!-- Bootstrap CSS for styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS for additional styles -->
+  <link rel="stylesheet" href="ind.css">
+
+  <!-- Google Fonts for custom typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Additional External Libraries (if needed) -->
+  <link rel="stylesheet" href="path/to/other/library.css">
+
+  <!-- JavaScript for functionality (optional, but good for performance) -->
+  <script src="path/to/your/javascript.js" defer></script>
+
+  <!-- Optional: Link for web fonts or additional style sheets -->
+  <link rel="stylesheet" href="path/to/your/styles.css">
+
+  <!-- SEO Tags for search engines -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.yoursite.com">
+
+  <!-- Open Graph and Twitter Cards for social media -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Your Website Name">
+</head>
+
+
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top advanced-navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/img.jpg" alt="Logo" class="logo me-2">
+        <span class="brand-name">Shehara's Portfolio</span>
+      </a>
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">My Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#journey">My Journey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <script>
+    // Scroll Event Listener for Transparency
+    window.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".advanced-navbar");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6 text-center text-lg-start hero-content">
+          <p class="intro-text">Hello, It's Me</p>
+          <h1>Shehara Banu Jamal</h1>
+          <h2>And I'm a <span>Frontend Developer</span></h2>
+          <p class="description">
+            I craft stunning, responsive, and user-centric web solutions. Bringing creativity and cutting-edge
+            technology together, I build experiences that inspire.
+          </p>
+          <div class="social-links d-flex justify-content-lg-start justify-content-center gap-3">
+            <a href="https://x.com/Shehara_" target="_blank" class="btn btn-outline-light">
+              <i class="bi bi-twitter"></i>
+
+
+            </a>
+            <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="btn btn-outline-light">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" target="_blank"
+              class="btn btn-outline-light">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+          <a href="https://drive.google.com/file/d/1WgT4ibyzMJgWFvNmAvfEI9yE36gX9fP3/view?usp=sharing"
+            class="btn btn-primary mt-4 download-btn" target="_blank">Download Resume</a>
+
+        </div>
+
+        <!-- Right Content -->
+        <div class="col-lg-6 text-center hero-image-container position-relative">
+          <div class="glow-circle"></div>
+          <img src="images/img1.jpg" alt="Profile Picture" class="img-fluid hero-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <!-- Profile Image -->
+      <div class="about-image">
+        <div class="glow-box"></div>
+        <img src="images/img2.jpg" alt="Profile">
+      </div>
+
+      <!-- About Content -->
+      <div class="about-content">
+        <h2><span>Discover</span> About Me</h2>
+        <p>
+          Hello! I'm <strong>Shehara Banu Jamal</strong>, a passionate Web Developer based in Dharmapuri, Tamil Nadu. I
+          specialize in creating responsive, user-friendly designs and applications, seamlessly integrating technology
+          with creativity.
+        </p>
+        <div class="about-info">
+          <div class="info-item"><strong>Name:</strong> Shehara Banu Jamal</div>
+          <div class="info-item"><strong>Age:</strong> 21</div>
+          <div class="info-item"><strong>Phone:</strong> 7845124247</div>
+          <div class="info-item"><strong>Email:</strong> sheharabanu555@gmail.com</div>
+          <div class="info-item"><strong>Languages:</strong> English, Tamil, Urdu</div>
+          <div class="info-item"><strong>Skills:</strong> HTML, CSS, JavaScript, Python, React</div>
+        </div>
+        <a href="https://drive.google.com/file/d/1WgT4ibyzMJgWFvNmAvfEI9yE36gX9fP3/view?usp=sharing"
+          class="btn btn-primary mt-4 download-btn" target="_blank">Resume</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="work-section" id="work">
+    <h2>My <span>Work</span></h2>
+    <p>Here are some of my design projects that showcase my skills and expertise. Click on a project to explore more
+      details.</p>
+
+    <div class="work-container">
+      <!-- Web Creations Category -->
+      <div class="work-category">
+        <h3>Web Creations</h3>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/doc.png" alt="Doc Portal">
+            </div>
+            <div class="project-info">
+              <h4>Doc Portal</h4>
+              <p>Responsive Design Concept</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/tour.png" alt="Tourism">
+            </div>
+            <div class="project-info">
+              <h4>Tourism</h4>
+              <p>E-commerce Static Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UI/UX Design Category -->
+      <div class="work-category">
+        <h3>UI/UX Design</h3>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/flip.jpeg" alt="Mobile App">
+            </div>
+            <div class="project-info">
+              <h4>Mobile App Design</h4>
+              <p>User-Centered Interface</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/wp.jpeg" alt="Figma Design">
+            </div>
+            <div class="project-info">
+              <h4>Figma App Design</h4>
+              <p>Interactive UI Designs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section py-5" id="skill">
+    <div class="container">
+      <div class="row text-center">
+        <h2 class="section-title mb-4">MY SKILLS</h2>
+      </div>
+      <div class="row">
+        <!-- Frontend Development -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="skill-card">
+            <h3>Frontend Development</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"
+                  class="icon">
+                HTML
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS"
+                  class="icon">
+                CSS
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
+                  class="icon">
+                JavaScript
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap"
+                  class="icon">
+                Bootstrap
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="icon">
+                React
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- UI/UX Design -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="skill-card">
+            <h3>UI/UX Design</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="icon">
+                Figma
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg" alt="Adobe XD"
+                  class="icon">
+                Adobe XD
+              </li>
+              <li>Wireframing, Prototyping, User Research</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Other Skills -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="skill-card">
+            <h3>Other Skills</h3>
+            <ul class="skill-list">
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
+                  class="icon">
+                Python
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" class="icon">
+                Git
+              </li>
+              <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"
+                  alt="VS Code" class="icon">
+                VS Code
+              </li>
+              <li>Video and Photo Editing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Section -->
+  <section class="journey-section" id="journey">
+    <h2>My <span>Journey</span></h2>
+    <div class="journey-container">
+      <!-- Education Category -->
+      <div class="journey-category">
+        <h3>Education</h3>
+        <div class="journey-card">
+          <span class="dot"></span>
+          <h4>Bachelor's Degree - Anna University</h4>
+          <p>Graduating in 2026. Specialized in Information Technology and Web Development.</p>
+        </div>
+        <div class="journey-card">
+          <span class="dot"></span>
+          <h4>High School - Bio-Maths</h4>
+          <p>Graduated in 2020. Excelled in Math and Science streams.</p>
+        </div>
+      </div>
+
+      <!-- Experience Category -->
+      <div class="journey-category">
+        <h3>Experience</h3>
+        <div class="journey-card">
+          <span class="dot"></span>
+          <h4>Web Developer - Nxtwave Company</h4>
+          <p>Aspirant of Nxtwave Academy. Built responsive websites and improved user experiences.</p>
+        </div>
+        <div class="journey-card">
+          <span class="dot"></span>
+          <h4>Intern - LMN Solutions</h4>
+          <p>Worked as an intern to assist in developing modern web applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section py-5" id="Contact Me">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="section-title">Contact Me</h2>
+          <p>If you have any questions or would like to collaborate, feel free to drop a message!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-6">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control form-input" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control form-input" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="mt-3">
+              <textarea class="form-control form-input" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="mt-3 text-center">
+              <button type="submit" class="btn btn-primary send-message-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row text-center mt-5">
+        <p class="social-text">Follow Me On:</p>
+        <div class="social-icons d-flex justify-content-center gap-3 mt-3">
+          <a href="https://x.com/Shehara_" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
+          <a href="https://github.com/Sheharabanu-J" class="social-link" target="_blank"><i
+              class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="social-link" target="_blank"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" class="social-link"
+            target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5">
+    <div class="container text-center">
+      <h4 class="footer-title">Shehara Banu Jamal</h4>
+      <p class="footer-subtitle">Innovating the Web | Crafting Unique UI/UX Experiences</p>
+      <div class="social-icons d-flex justify-content-center gap-3 mt-3">
+        <a href="https://x.com/Shehara_" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/Sheharabanu-J" class="social-link" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/shehara-banu-jamal" class="social-link" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" class="social-link"
+          target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+      <div class="footer-links mt-4">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#work" class="footer-link">Projects</a>
+        <a href="#journey" class="footer-link">Journey</a>
+        <a href="#Contact Me" class="footer-link">Contact</a>
+      </div>
+      <div class="newsletter mt-4">
+        <form class="d-flex justify-content-center">
+          <input type="email" class="form-control newsletter-input" placeholder="Your Email" required>
+          <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
+        </form>
+      </div>
+      <p class="footer-note mt-4">© 2025 Shehara Banu Jamal. All Rights Reserved. Designed with 💜 by Shehara Banu Jamal
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
