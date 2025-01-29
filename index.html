@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Shehara's Portfolio - Full-Stack Development, UI/UX Designer & Software Engineer">
-  <meta name="keywords" content="Full-Stack Development, UI/UX Design, Software Engineering, Web Development, Portfolio, Designer, Developer">
+  <meta name="keywords"
+    content="Full-Stack Development, UI/UX Design, Software Engineering, Web Development, Portfolio, Designer, Developer">
   <meta name="author" content="Shehara Banu">
   <meta property="og:title" content="Shehara's Portfolio - Full-Stack Developer & UI/UX Designer">
-  <meta property="og:description" content="Showcasing Full-Stack Development, UI/UX Design, and Software Engineering Projects by Shehera Banu">
+  <meta property="og:description"
+    content="Showcasing Full-Stack Development, UI/UX Design, and Software Engineering Projects by Shehera Banu">
   <meta property="og:image" content="URL-to-image.jpg">
   <meta property="og:url" content="https://www.yoursite.com">
   <meta name="twitter:card" content="summary_large_image">
@@ -87,7 +89,7 @@
             <a class="nav-link" href="#journey">My Journey</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Me</a>
+            <a class="nav-link" href="#Contact Me">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -124,10 +126,9 @@
           <div class="social-links d-flex justify-content-lg-start justify-content-center gap-3">
             <a href="https://x.com/Shehara_" target="_blank" class="btn btn-outline-light">
               <i class="bi bi-twitter"></i>
-
-
             </a>
-            <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="btn btn-outline-light">
+            <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank" class="btn btn-outline-light">
               <i class="bi bi-linkedin"></i>
             </a>
             <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" target="_blank"
@@ -137,7 +138,6 @@
           </div>
           <a href="https://drive.google.com/file/d/1WgT4ibyzMJgWFvNmAvfEI9yE36gX9fP3/view?usp=sharing"
             class="btn btn-primary mt-4 download-btn" target="_blank">Download Resume</a>
-
         </div>
 
         <!-- Right Content -->
@@ -149,11 +149,88 @@
     </div>
   </section>
 
+  <!-- CSS Animations -->
+  <style>
+    /* Hero Section Animations */
+    .hero-content {
+      opacity: 0;
+      animation: fadeInLeft 2s ease-out forwards;
+    }
+
+    .hero-content h1 {
+      opacity: 0;
+      animation: fadeInUp 2s ease-out forwards 0.3s;
+    }
+
+    .hero-content h2 {
+      opacity: 0;
+      animation: fadeInUp 2s ease-out forwards 0.6s;
+    }
+
+    .hero-content .description {
+      opacity: 0;
+      animation: fadeInUp 2s ease-out forwards 0.9s;
+    }
+
+    .hero-content .social-links {
+      opacity: 0;
+      animation: fadeInUp 2s ease-out forwards 1.2s;
+    }
+
+    .hero-image-container .hero-image {
+      opacity: 0;
+      animation: fadeInRight 2s ease-out forwards 0.3s;
+    }
+
+    .hero-image-container .glow-circle {
+      opacity: 0;
+      animation: fadeInRight 2s ease-out forwards 0.6s;
+    }
+
+    /* Fade-In Animations */
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+
+
   <!-- About Section -->
   <section class="about-section" id="about">
     <div class="about-container">
       <!-- Profile Image -->
-      <div class="about-image">
+      <div class="about-image fadeInRight">
         <div class="glow-box"></div>
         <img src="images/img2.jpg" alt="Profile">
       </div>
@@ -248,7 +325,7 @@
       </div>
       <div class="row">
         <!-- Frontend Development -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 skill-card">
           <div class="skill-card">
             <h3>Frontend Development</h3>
             <ul class="skill-list">
@@ -279,8 +356,9 @@
             </ul>
           </div>
         </div>
+
         <!-- UI/UX Design -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 skill-card">
           <div class="skill-card">
             <h3>UI/UX Design</h3>
             <ul class="skill-list">
@@ -297,8 +375,9 @@
             </ul>
           </div>
         </div>
+
         <!-- Other Skills -->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-6 mb-4 skill-card">
           <div class="skill-card">
             <h3>Other Skills</h3>
             <ul class="skill-list">
@@ -323,6 +402,98 @@
       </div>
     </div>
   </section>
+
+  <!-- CSS -->
+  <style>
+    /* Fade-in and Fade-out Animation */
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeOutRight {
+      0% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateX(100px);
+        /* Moves to the right */
+      }
+    }
+
+    .fadeInRight {
+      animation: fadeInRight 1s ease-out forwards;
+    }
+
+    .fadeOutRight {
+      animation: fadeOutRight 1s ease-out forwards;
+    }
+
+    /* Ensure smooth transition for skill cards */
+    .skill-card {
+      opacity: 1;
+      transition: opacity 1s ease-out;
+    }
+
+    /* Icon styling */
+    .icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .skill-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skill-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    // Select the skills section and skill cards
+    const skillsSection = document.querySelector('.skills-section');
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    // Create an IntersectionObserver to trigger animations when the section is in view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add fade-in animation when the section comes into view
+          entry.target.classList.remove('fadeOutRight'); // Ensure it's visible when in view
+          entry.target.classList.add('fadeInRight');
+        } else {
+          // Add fade-out animation when the section leaves the viewport
+          entry.target.classList.add('fadeOutRight');
+        }
+      });
+    }, {
+      threshold: 0.5 // Trigger when 50% of the section is visible
+    });
+
+    // Observe the skills section
+    observer.observe(skillsSection);
+
+    // Observe each skill card to trigger fade-out animation
+    skillCards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
 
   <!-- Journey Section -->
   <section class="journey-section" id="journey">
@@ -395,8 +566,8 @@
           <a href="https://x.com/Shehara_" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
           <a href="https://github.com/Sheharabanu-J" class="social-link" target="_blank"><i
               class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="social-link" target="_blank"><i
-              class="bi bi-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+            class="social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
           <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" class="social-link"
             target="_blank"><i class="bi bi-instagram"></i></a>
         </div>
