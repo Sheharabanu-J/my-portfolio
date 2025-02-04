@@ -89,7 +89,7 @@
             <a class="nav-link" href="#journey">My Journey</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Contact Me">Contact Me</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -531,50 +531,179 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact-section py-5" id="Contact Me">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="section-title">Contact Me</h2>
-          <p>If you have any questions or would like to collaborate, feel free to drop a message!</p>
-        </div>
+<!-- Contact Section -->
+<section class="contact-section py-5" id="contact">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="section-title mb-4">Get in Touch</h2>
+        <p class="lead">Have a project in mind or just want to connect? Let's talk!</p>
       </div>
-      <div class="row justify-content-center mt-4">
-        <div class="col-lg-6">
-          <form>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control form-input" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control form-input" placeholder="Your Email" required>
-              </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-lg-8 col-xl-6">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+          <input type="hidden" name="access_key" value="fcdf5e10-cec3-42f5-932d-fe516b89ef12">
+          <input type="hidden" name="subject" value="New Message from Portfolio Website">
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label visually-hidden">Your Name</label>
+              <input type="text" class="form-control form-input" 
+                     id="name" name="name" 
+                     placeholder="Your Name" required
+                     minlength="3" maxlength="50">
             </div>
-            <div class="mt-3">
-              <textarea class="form-control form-input" rows="5" placeholder="Your Message" required></textarea>
+            <div class="col-md-6">
+              <label for="email" class="form-label visually-hidden">Your Email</label>
+              <input type="email" class="form-control form-input" 
+                     id="email" name="email" 
+                     placeholder="Your Email" required>
             </div>
-            <div class="mt-3 text-center">
-              <button type="submit" class="btn btn-primary send-message-btn">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="row text-center mt-5">
-        <p class="social-text">Follow Me On:</p>
-        <div class="social-icons d-flex justify-content-center gap-3 mt-3">
-          <a href="https://x.com/Shehara_" class="social-link" target="_blank"><i class="bi bi-twitter"></i></a>
-          <a href="https://github.com/Sheharabanu-J" class="social-link" target="_blank"><i
-              class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/shehara-banu-jamal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
-            class="social-link" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.instagram.com/sharu_jamal_?igsh=MW5tdXZpZW44aHJhdA==" class="social-link"
-            target="_blank"><i class="bi bi-instagram"></i></a>
+          </div>
+
+          <div class="mt-3">
+            <label for="message" class="form-label visually-hidden">Your Message</label>
+            <textarea class="form-control form-input" 
+                      id="message" name="message" 
+                      rows="5" placeholder="Your Message" 
+                      required minlength="10" maxlength="500"></textarea>
+          </div>
+
+          <div class="mt-4 text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-5 send-message-btn">
+              <span class="submit-text">Send Message</span>
+              <span class="spinner-border spinner-border-sm d-none" 
+                    role="status" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Success Message -->
+        <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">
+          Message sent successfully! I'll get back to you soon.
         </div>
       </div>
     </div>
-  </section>
 
+    <!-- Social Links -->
+    <div class="row text-center mt-5">
+      <div class="col-12">
+        <p class="social-text mb-4">Let's Connect</p>
+        <div class="social-icons d-flex justify-content-center gap-4">
+          <a href="https://x.com/Shehara_" class="social-link twitter" 
+             target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-twitter"></i>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+          <a href="https://github.com/Sheharabanu-J" class="social-link github" 
+             target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+            <span class="visually-hidden">GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/shehara-banu-jamal" 
+             class="social-link linkedin" 
+             target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+            <span class="visually-hidden">LinkedIn</span>
+          </a>
+          <a href="https://www.instagram.com/sharu_jamal_" 
+             class="social-link instagram" 
+             target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* .contact-section {
+    background: linear-gradient(to bottom right, #f8f9fa, #ffffff);
+  } */
+
+  .form-input {
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+  }
+
+  .form-input:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+  }
+
+  .send-message-btn {
+    background: linear-gradient(135deg, #ff6b6b, #ff8787);
+    border: none;
+    padding: 12px 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .send-message-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .social-link {
+    font-size: 1.5rem;
+    color: #495057;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .social-link:hover {
+    transform: translateY(-3px);
+  }
+
+  .twitter:hover { color: #1da1f2; }
+  .github:hover { color: #333; }
+  .linkedin:hover { color: #0a66c2; }
+  .instagram:hover { color: #e1306c; }
+</style>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const form = e.target;
+  const button = form.querySelector('button[type="submit"]');
+  const spinner = button.querySelector('.spinner-border');
+  const submitText = button.querySelector('.submit-text');
+  
+  // Show loading state
+  submitText.textContent = 'Sending...';
+  spinner.classList.remove('d-none');
+  button.disabled = true;
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+    });
+
+    if (response.ok) {
+      document.getElementById('successMessage').classList.remove('d-none');
+      form.reset();
+      setTimeout(() => {
+        document.getElementById('successMessage').classList.add('d-none');
+      }, 5000);
+    } else {
+      alert('There was an error sending your message. Please try again.');
+    }
+  } catch (error) {
+    alert('Network error. Please check your connection and try again.');
+  } finally {
+    // Reset button state
+    submitText.textContent = 'Send Message';
+    spinner.classList.add('d-none');
+    button.disabled = false;
+  }
+});
+</script>
   <!-- Footer -->
   <footer class="footer py-5">
     <div class="container text-center">
@@ -593,10 +722,11 @@
         <a href="#about" class="footer-link">About</a>
         <a href="#work" class="footer-link">Projects</a>
         <a href="#journey" class="footer-link">Journey</a>
-        <a href="#Contact Me" class="footer-link">Contact</a>
+        <a href="#contact" class="footer-link">Contact</a>
       </div>
       <div class="newsletter mt-4">
-        <form class="d-flex justify-content-center">
+        <form class="d-flex justify-content-center " action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="fcdf5e10-cec3-42f5-932d-fe516b89ef12">
           <input type="email" class="form-control newsletter-input" placeholder="Your Email" required>
           <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
         </form>
